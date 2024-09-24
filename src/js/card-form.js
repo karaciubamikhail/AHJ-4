@@ -1,7 +1,7 @@
 import {validateNumber} from '../js/validateNumber'
-import visa from '../img/icons8-мастеркард-48.png'
+import visa from '../img/icons8-виза.svg'
 import master from '../img/icons8-мастеркард-48.png'
-import mir from '../img/icons8-мастеркард-48.png'
+import mir from '../img/mir-svgrepo-com.svg'
 export class CardForm {
     constructor (elem){
         this._elem = elem;
