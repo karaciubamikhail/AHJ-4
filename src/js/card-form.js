@@ -1,4 +1,7 @@
 import {validateNumber} from '../js/validateNumber'
+import visa from '../img/icons8-мастеркард-48.png'
+import master from '../img/icons8-мастеркард-48.png'
+import mir from '../img/icons8-мастеркард-48.png'
 export class CardForm {
     constructor (elem){
         this._elem = elem;
@@ -7,9 +10,9 @@ export class CardForm {
         return `
         <div class = "card"> 
             <div class = "card-imgs">
-                <img src = "../img/icons8-виза.svg" class='card-imgs__img'> </img>
-                <img src = "../img/icons8-мастеркард-48.png" class='card-imgs__img'> </img>
-                <img src = "../img/mir-svgrepo-com.svg" class='card-imgs__img'> </img>
+                <img src = "${visa}" class='card-imgs__img'> </img>
+                <img src = "${master}" class='card-imgs__img'> </img>
+                <img src = "${mir}" class='card-imgs__img'> </img>
             </div>
             <form class = "card-form">
                 <input type = "text" class = "card-form__imput"></input>
