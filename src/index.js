@@ -1,5 +1,4 @@
-import "./css/game-goblin.css";
-import "./img/goblin.png";
+import "./css/card-form.css";
 
 import "./js/app";
 

@@ -1,5 +1,6 @@
 // TODO: write code here
-import { Game } from "./game-goblin";
+import { CardForm } from "./card-form";
 
-let fild = new Game(document.querySelector(".field"));
-fild.startGame();
+let form = new CardForm(document.querySelector(".container"));
+form.bindToDom();
+form.formEvent();
