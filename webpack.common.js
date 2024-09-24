@@ -35,11 +35,21 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.(gif|png|jpg|jpeg|svg)?$/,
-        loader: "file-loader",
-        options: {
-          name: "/img/[name].[ext]",
-        },
+        test: /\.(gif|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png)$/i,
+        type: 'asset/resource',
       },
     ],
   },
