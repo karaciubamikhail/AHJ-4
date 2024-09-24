@@ -7,14 +7,13 @@
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint . --fix",
-    "test2": "jest --testPathPattern=./src/",
-    "test2:ci": "start-server-and-test start :9000 jest",
     "test": "jest",
     "coverage": "jest --coverage",
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
-    "show:dist": "http-server dist"
+    "show:dist": "http-server dist",
+    "test2": "jest --testPathPattern=./src/"
   },
   "author": "coursar",
   "license": "MIT",
@@ -44,9 +43,8 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
-    "file-loader": "^6.2.0"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
+    "file-loader": "^6.2.0",
+    "jsdom": "^25.0.1"
   }
+  
 }

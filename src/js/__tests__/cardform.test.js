@@ -1,4 +1,4 @@
-import { CardForm } from "./card-form";
+import { CardForm } from "../card-form";
 
 test('testCardMir',()=>{
     document.body.innerHTML = "<div class='container'></div>";
